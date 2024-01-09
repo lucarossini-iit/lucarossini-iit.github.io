@@ -1,5 +1,52 @@
 
     <header>
+      
+      <script>
+      function isElementInCorrespondence(elementId) {
+        var element = document.getElementById(elementId);
+        var rect = element.getBoundingClientRect();
+        if (element) {
+          var correspondenceArea = {
+            top: rect.top,
+            bottom: rect.bottom,
+            left: rect.left,
+            right: rect.right
+          };
+          
+          console.log("window.scroll: ");
+          console.log(window.scrollY + ", " + window.scrollX);
+          console.log("correspondenceArea: ");
+          console.log(correspondenceArea.top + ", " + correspondenceArea.bottom + ", " + correspondenceArea.left + ", " + correspondenceArea.right);
+        
+          return (
+              window.scrollY >= correspondenceArea.top &&
+              window.scrollY <= correspondenceArea.bottom &&
+              window.scrollX >= correspondenceArea.left &&
+              window.scrollX <= correspondenceArea.right    
+          );
+        }
+      
+        return false;
+      }
+
+      // Function to handle scroll events
+      function handleScroll() {
+      var targetElementId = "organizers";
+      var isInCorrespondence = isElementInCorrespondence(targetElementId);
+
+      if (isInCorrespondence) {
+          console.log("You are in correspondence with the element with ID '" + targetElementId + "'.");
+      } else {
+          console.log("You are not in correspondence with the element with ID '" + targetElementId + "'.");
+      }
+      }
+
+      // Attach the handleScroll function to the scroll event
+      window.addEventListener("scroll", handleScroll);
+
+      // Initial check
+      handleScroll();
+      </script>
 
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
@@ -25,7 +72,7 @@
           <div class="collapse navbar-collapse text-right" id="navbarNav">
             <ul class="navbar-nav ml-auto flex-nowrap">
               
-              <li class="nav-item active">
+              <li class="nav-item {% if isElementInCorrespondence(organizers)%}active{% endif %}">
                 <a class="nav-link" href="#organizers">Organizers</a>
                 <span class="sr-only">(current)</span>
               </li>
