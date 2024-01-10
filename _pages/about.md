@@ -26,12 +26,7 @@ toc:
       }
 </style>   
 
-<div class="image-container">
-  <a href="https://www.cs.washington.edu/people/postdocs/tassa" target="_self"> 
-    <img src="assets/img/yuval_tassa.jpg" alt="Dr. Yuval Tassa Picture"/> 
-    <figcaption class="image-caption">Yuval Tassa</figcaption>
-    <p>Google DeepMind</p>
-  </a>
+
   <a href="https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-3858/16537_read-29897/sortby-lastname/" target="_self"> 
     <img src="assets/img/johannes_englsberger.jpg" alt="Dr. Johannes Englsberger Picture" /> 
     <figcaption class="image-caption">Johannes Englsberger</figcaption>
@@ -71,19 +66,24 @@ toc:
 </div> -->
 
 <h2 id="speakers" class="fancy-heading">SPEAKERS</h2>
-
 <div class="container">
 <div class="grid">
   <div class="grid-sizer">
     <div class="grid-item">
       <div class="card hoverable" style="width: 250px; height: 430px">
+        <a href="https://www.cs.washington.edu/people/postdocs/tassa">
         <img src="assets/img/yuval_tassa.jpg" alt="Yuval Tassa Picture"/> 
+        </a>
         <div class="card-body">
           <h2 class="card-title" style="font-size: 17px">Yuval Tassa</h2>
           <h3 class="card-subtitle">Google DeepMing</h3>
           <p class="card-text" style="text-align: left; margin-top: 5px"><b>Title:</b> Trajectory optimization with MuJoCo</p>          
         </div>
-        <a href="#" class="circular-button">+</a>
+        {%- include pop-up.html
+          id = "yuval_tassa_modal" -%}
+        <button type="button" class="circular-button" data-toggle="modal" data-target="#yuval_tassa_modal">
+          <span class="material-symbols-outlined">play_circle</span> 
+        </button>
       </div>
     </div>
   </div>
@@ -91,13 +91,19 @@ toc:
   <div class="grid-sizer">
     <div class="grid-item">
       <div class="card hoverable" style="width: 250px; height: 430px">
+        <a href="https://www.dlr.de/rm/en/desktopdefault.aspx/tabid-3858/16537_read-29897/sortby-lastname/">
         <img src="assets/img/johannes_englsberger.jpg" alt="Johannes Englsberger Picture"/> 
+        </a>
         <div class="card-body">
           <h2 class="card-title" style="font-size: 16px">Johannes Englsberger</h2>
           <h3 class="card-subtitle">DLR</h3>
           <p class="card-text" style="text-align: left; margin-top: 5px"><b>Title:</b> Why I decided NOT to use MPC – a denier’s perspective</p>
         </div>
-        <a href="#" class="circular-button">+</a>
+        {%- include pop-up.html
+          id = "yuval_tassa_modal" -%}
+        <button type="button" class="circular-button" data-toggle="modal" data-target="#yuval_tassa_modal">
+          <span class="material-symbols-outlined">play_circle</span> 
+        </button>
       </div>
     </div>
   </div>
@@ -105,13 +111,19 @@ toc:
   <div class="grid-sizer">
     <div class="grid-item">
       <div class="card hoverable" style="width: 250px; height: 430px">
+        <a href="https://sites.nd.edu/pwensing/">
         <img  src="assets/img/patrick_wensing.jpeg" alt="Patrick Wensing Picture"/> 
+        </a>
         <div class="card-body">
           <h2 class="card-title" style="font-size: 17px">Patrick Wensing</h2>
           <h3 class="card-subtitle">University of Notre Dame</h3>
           <p class="card-text" style="text-align: left; margin-top: 5px"><b>Title:</b> Accelerating MPC for dynamic locomotion: Exploiting structure, and letting learning guide the way</p>  
         </div>
-        <a href="#" class="circular-button">+</a>
+        {%- include pop-up.html
+          id = "yuval_tassa_modal" -%}
+        <button type="button" class="circular-button" data-toggle="modal" data-target="#yuval_tassa_modal">
+          <span class="material-symbols-outlined">play_circle</span> 
+        </button>
       </div>
     </div>
   </div>
@@ -119,13 +131,19 @@ toc:
   <div class="grid-sizer">
     <div class="grid-item">
       <div class="card hoverable" style="width: 250px; height: 430px">
+        <a href="https://mavt.ethz.ch/people/person-detail.MjI1NTcx.TGlzdC81NTksLTE3MDY5NzgwMTc=.html">
         <img src="assets/img/jean_pierre_sleiman.jpg" alt="Jean Pierre Sleiman Picture"/> 
+        </a>
         <div class="card-body">
           <h2 class="card-title" style="font-size: 17px">Jean Pierre Sleiman</h2>
           <h3 class="card-subtitle">ETH</h3>
           <p class="card-text" style="text-align: left; margin-top: 5px"><b>Title:</b> Whole-Body Motion Planning and Control for Multi-Contact Locomanipulation</p>
         </div>
-        <a href="#" class="circular-button">+</a>
+        {%- include pop-up.html
+          id = "yuval_tassa_modal" -%}
+        <button type="button" class="circular-button" data-toggle="modal" data-target="#yuval_tassa_modal">
+          <span class="material-symbols-outlined">play_circle</span> 
+        </button>
       </div>
     </div>
   </div>
@@ -133,13 +151,19 @@ toc:
   <div class="grid-sizer">
     <div class="grid-item">
       <div class="card hoverable" style="width: 250px; height: 430px">
+        <a href="https://members.loria.fr/SIvaldi/">
         <img src="assets/img/serena_ivaldi.jpg" alt="Serena Ivaldi Picture"/> 
+        </a>
         <div class="card-body">
           <h2 class="card-title" style="font-size: 17px">Serena Ivaldi</h2>
           <h3 class="card-subtitle">Inria</h3>
           <p class="card-text" style="text-align: left; margin-top: 5px"><b>Title:</b> Teleoperating humanoid robots: optimised controllers, contacts and human-like motions </p>
         </div>
-        <a href="#" class="circular-button">+</a>
+        {%- include pop-up.html
+          id = "yuval_tassa_modal" -%}
+        <button type="button" class="circular-button" data-toggle="modal" data-target="#yuval_tassa_modal">
+          <span class="material-symbols-outlined">play_circle</span> 
+        </button>
       </div>
     </div>
   </div>
@@ -147,13 +171,19 @@ toc:
   <div class="grid-sizer">
     <div class="grid-item">
       <div class="card hoverable" style="width: 250px; height: 430px">
+        <a href = "https://cmastalli.github.io/">
         <img src="assets/img/carlos_mastalli.jpeg" alt="Carlos Mastalli Picture"/> 
+        </a>
         <div class="card-body">
           <h2 class="card-title" style="font-size: 17px">Carlos Mastalli</h2>
           <h3 class="card-subtitle">University of Edinburgh</h3>
           <p class="card-text" style="text-align: left; margin-top: 5px"><b>Title:</b> Accelerating Algorithms for Numerical Optimization in Full-Dynamics MPC</p>
         </div>
-        <a href="#" class="circular-button">+</a>
+        {%- include pop-up.html
+          id = "yuval_tassa_modal" -%}
+        <button type="button" class="circular-button" data-toggle="modal" data-target="#yuval_tassa_modal">
+          <span class="material-symbols-outlined">play_circle</span> 
+        </button>
       </div>
     </div>
   </div>
@@ -161,13 +191,19 @@ toc:
   <div class="grid-sizer">
     <div class="grid-item">
       <div class="card hoverable" style="width: 250px; height: 430px">
+        <a href = "https://webapps.unitn.it/du/it/Persona/PER0197808/Didattica">
         <img src="assets/img/andrea_del_prete.jpeg" alt="Andrea Del Prete Picture"/> 
+        </a>
         <div class="card-body">
           <h2 class="card-title" style="font-size: 17px">Andrea Del Prete</h2>
           <h3 class="card-subtitle">Università di Trento</h3>
           <p class="card-text" style="text-align: left; margin-top: 5px"><b>Title:</b> Integrating learning and trajectory optimization to achieve safe and efficient robot control</p>
         </div>
-        <a href="#" class="circular-button">+</a>
+        {%- include pop-up.html
+          id = "yuval_tassa_modal" -%}
+        <button type="button" class="circular-button" data-toggle="modal" data-target="#yuval_tassa_modal">
+          <span class="material-symbols-outlined">play_circle</span> 
+        </button>
       </div>
     </div>
   </div>
@@ -175,13 +211,19 @@ toc:
   <div class="grid-sizer">
     <div class="grid-item">
       <div class="card hoverable" style="width: 250px; height: 430px">
+        <a href = "https://gepettoweb.laas.fr/index.php/Members/NicolasMansard">
         <img src="assets/img/nicolas_mansard.jpg" alt="Nicolas Mansard Picture"/> 
+        </a>
         <div class="card-body">
           <h2 class="card-title" style="font-size: 17px">Nicolas Mansard</h2>
           <h3 class="card-subtitle">LAAS-CNRS</h3>
           <p class="card-text" style="text-align: left; margin-top: 5px"><b>Title:</b> Whole-body MPC on real robots, by combining advanced solver and machine learning</p>
         </div>
-        <a href="#" class="circular-button">+</a>
+        {%- include pop-up.html
+          id = "yuval_tassa_modal" -%}
+        <button type="button" class="circular-button" data-toggle="modal" data-target="#yuval_tassa_modal">
+          <span class="material-symbols-outlined">play_circle</span> 
+        </button>
       </div>
     </div>
   </div>

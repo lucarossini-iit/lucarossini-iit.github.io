@@ -65,8 +65,8 @@ strong {
   justify-content: center;
   text-align: center;
   vertical-align: top;
-  margin-left: 10%;
-  margin-right: 10%;
+  // margin-left: 10%;
+  // margin-right: 10%;
 }
 
 // @media (max-width: 800px) {
@@ -245,22 +245,33 @@ blockquote {
     justify-content: center;
     width: 30px; /* Adjust the size of the button */
     height: 30px; /* Adjust the size of the button */
-    background-color: rgb(146, 23, 23); /* Adjust the background color */
+    background-color: rgba(146, 23, 23, 0); /* Adjust the background color */
     border-radius: 50%; /* Creates a circular shape */
-    color: rgb(240, 202, 202); /* Text color */
+    color: rgba(240, 202, 202, 0); /* Text color */
     font-size: 18px; /* Adjust the font size */
     text-decoration: none;
     border: none; /* Remove border */
     cursor: pointer;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+    // box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
     transition: all 0.3s ease;
+
+    .material-symbols-outlined {
+      scale: 120%;
+      color: rgba(0, 0, 0, 0.76);
+      background-color: rgb(190, 40, 40);
+      border-radius: 50%;
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 0
+    }
   }
 
   .circular-button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 1.0);
-
   }
+
 }
 
 // Citation
