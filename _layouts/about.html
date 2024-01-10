@@ -2,13 +2,11 @@
 layout: default
 ---
 
-
-
 <!-- about.html -->
       <div class="post">
         <header class="post-header">
-          <h1 class="post-title">
-            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+          <h1 class="post-title" >
+            {{ site.title }}
           </h1>
           <p class="desc">{{ page.subtitle }}</p>
         </header>
@@ -18,90 +16,16 @@ layout: default
             {{ content }}
           </div>
 
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %}
+        <!-- Social -->
+        {%- if page.social %}
+          <div class="social">
+            <div class="contact-icons">
+              {% include social.html %}
+            </div>
 
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
-
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h1 id="organizers">WORKSHOP ORGANIZERS</h1>
-            
-            <style>
-              img {
-                    border: "0";
-                    border-radius: 50%;
-                  }
-            </style>
-
-            <style>
-              .image-container {
-                display: flex;
-                justify-content: center; /* Align items horizontally */
-                text-align: center;
-                vertical-align: top  
-              }
-
-              @media (max-width: 800px) {
-              .image-container {
-                flex-direction: column;
-                }
-              }
-
-              .image-container img {
-                max-width: 100%; /* Ensure images don't exceed the container width */
-                height: auto; /* Maintain aspect ratio */
-                margin: 15px; /* Add some margin between images (adjust as needed) */
-              }
-            </style>
-
-            <div class="image-container">
-            <a href="https://www.iit.it/it/people-details/-/people/luca-rossini" target="_self"> 
-              <img src="assets/img/luca_rossini.png" alt="Prof. Luis Sentis Picture" width="200" /> 
-              <h3 class="image-caption">Luca Rossini</h3>
-              <p>IIT</p>
-            </a>
-            <a href="https://www.iit.it/it/people-details/-/people/francesco-ruscelli" target="_self"> 
-              <img src="assets/img/francesco_ruscelli.png" alt="Francesco Ruscelli Picture" width="200" /> 
-              <h3 class="image-caption">Francesco Ruscelli</h3>
-              <p>IIT</p>
-            </a>
-            <a href="https://www.iit.it/it/people-details/-/people/luca-rossini" target="_self"> 
-              <img src="assets/img/enrico_mingo1.jpeg" alt="Enrico Mingo Hoffman Picture" width="200" /> 
-              <h3 class="image-caption">Enrico Mingo Hoffman</h3>
-              <p>Inria</p>
-            </a>
-            <a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/sentis" target="_self"> 
-              <img src="assets/img/luis_sentis.jpg" alt="Luis Sentis Picture" width="200" />   
-              <h3 class="image-caption">Luis Sentis</h3>
-              <p>University of Texas at Austin</p>         
-            </a>
-            <a href = "https://cmastalli.github.io/" target = "_self"> 
-              <img src = "assets/img/carlos_mastalli.jpeg" alt = "Carlos Mastalli Picture" width ="200"/> 
-              <h3 class="image-caption">Carlos Mastalli</h3>
-              <p>University of Edinburgh</p>
-            </a>
-          </div>
-
-          {%- endif %}
-
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
+            <div class="contact-note">
+              {{ site.contact_note }}
+            </div>
 
             </div>
           {%- endif %}
