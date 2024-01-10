@@ -234,27 +234,27 @@ toc:
 
 
 <div class="image-container">
-<a href="https://www.iit.it/it/people-details/-/people/luca-rossini" target="_self"> 
+<a href="https://www.iit.it/it/people-details/-/people/luca-rossini"> 
   <img class="hoverable" style="border-radius: 50%" src="assets/img/luca_rossini.png" alt="Prof. Luis Sentis Picture" width="200" /> 
   <figcaption class="image-caption">Luca Rossini</figcaption>
   <p>IIT</p>
 </a>
-<a href="https://www.iit.it/it/people-details/-/people/francesco-ruscelli" target="_self"> 
+<a href="https://www.iit.it/it/people-details/-/people/francesco-ruscelli"> 
   <img class="hoverable" style="border-radius: 50%" src="assets/img/francesco_ruscelli.png" alt="Francesco Ruscelli Picture" width="200" /> 
   <figcaption class="image-caption">Francesco Ruscelli</figcaption>
   <p>IIT</p>
 </a>
-<a href="https://www.iit.it/it/people-details/-/people/luca-rossini" target="_self"> 
+<a href="https://members.loria.fr/EMingoHoffman/"> 
   <img class="hoverable" style="border-radius: 50%"  src="assets/img/enrico_mingo1.jpeg" alt="Enrico Mingo Hoffman Picture" width="200" /> 
   <figcaption class="image-caption">Enrico Mingo Hoffman</figcaption>
   <p>Inria</p>
 </a>
-<a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/sentis" target="_self"> 
+<a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/sentis"> 
   <img class="hoverable" style="border-radius: 50%"  src="assets/img/luis_sentis.jpg" alt="Luis Sentis Picture" width="200" />   
   <figcaption class="image-caption">Luis Sentis</figcaption>
   <p>University of Texas at Austin</p>         
 </a>
-<a href = "https://cmastalli.github.io/" target = "_self"> 
+<a href = "https://cmastalli.github.io/"> 
   <img class="hoverable" style="border-radius: 50%" src = "assets/img/carlos_mastalli.jpeg" alt = "Carlos Mastalli Picture" width ="200"/> 
   <figcaption class="image-caption">Carlos Mastalli</figcaption>
   <p>University of Edinburgh</p>
