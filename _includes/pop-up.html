@@ -1,8 +1,8 @@
 {%- assign id = include.id -%}
 
 <!-- Modal -->
-<div class="modal fade" id={{ id }} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" style="width: 100%" id={{ id }} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Popup Page</h5>
@@ -12,7 +12,19 @@
         </div>
         <div class="modal-body">
           <!-- Content of your popup page goes here -->
-          <p>This is the content of the popup page.</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <img src={{ img_path }} alt=""/>
+              </div>
+              <div class="col-sm">
+                <!-- <video width="600px" controls>
+                  <source src="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" type="video/mp4">
+                </video> -->
+                blobloblo
+              </div>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
